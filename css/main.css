@@ -291,6 +291,16 @@ a {
     }
 }
 
+@media all and (min-width: 1000px) {
+    time {
+        float: left;
+    }
+
+    .post .meta .posted {
+        float: right;
+    }
+}
+
 .post .entry {
     text-align: justify;
 }
