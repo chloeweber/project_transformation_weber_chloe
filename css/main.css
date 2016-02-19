@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.8em;
+    font-size: 3em;
 }
 
 h3 {
@@ -128,7 +128,6 @@ a {
 #menu a {
     display: block;
     line-height: 100px;
-    margin-right: 1px;
     padding: 0 20px 0 20px;
     text-decoration: none;
     text-align: center;
@@ -220,7 +219,7 @@ a {
 .more {
     display: block;
     width: 100%;
-    padding: 5px 5px;
+    padding: 20px 5px;
     margin-right: 10px;
     margin-bottom: 10px;
     background: #222222;
@@ -232,7 +231,7 @@ a {
 .comments {
     display: block;
     width: 100%;
-    padding: 5px 5px;
+    padding: 20px 5px;
     background: #222222;
     color: #ffffff;
     text-align: center;
@@ -259,7 +258,8 @@ a {
 
 #sidebar li {
     margin: 0;
-    padding: 0;
+    padding: 10px 0;
+    font-size: 1.1em;
 }
 
 #sidebar li ul {
@@ -290,7 +290,6 @@ a {
 #sidebar h2 {
     padding: 0 0 30px 0;
     letter-spacing: -0.5px;
-    font-size: 1.8em;
     color: #222222;
 }
 
