@@ -38,10 +38,6 @@ h3 {
     color: #222222;
 }
 
-h1 {
-    font-size: 2em;
-}
-
 h2 {
     font-size: 3em;
 }
@@ -238,6 +234,14 @@ a {
     padding: 30px 0;
 }
 
+@media all and (min-width: 1000px) {
+    #page::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+}
+
 /* Content */
 
 #content {
@@ -279,20 +283,22 @@ a {
     font-weight: 300;
 }
 
-.post .meta .date {
-}
-
-.post .meta .posted {
+@media all and (min-width: 1000px) {
+    .meta::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
 }
 
 .post .entry {
-    padding: 0 0 40 0;
     text-align: justify;
 }
 
 .links {
     padding-top: 20px;
     margin-bottom: 30px;
+    display: block;
 }
 
 .more {
@@ -307,6 +313,13 @@ a {
     text-decoration: none;
 }
 
+@media all and (min-width: 1000px) {
+    .more {
+        display: inline;
+        padding: 10px;
+    }
+}
+
 .comments {
     display: block;
     width: 100%;
@@ -315,6 +328,13 @@ a {
     color: #ffffff;
     text-align: center;
     text-decoration: none;
+}
+
+@media all and (min-width: 1000px) {
+    .comments {
+        display: inline;
+        padding: 10px;
+    }
 }
 
 .single-word-style {
