@@ -21,6 +21,12 @@ body {
     color: #5b5b5b;
 }
 
+@media all and (min-width: 1000px) {
+    body {
+        font-size: 14px;
+    }
+}
+
 h1,
 h2,
 h3 {
@@ -40,8 +46,14 @@ h2 {
     font-size: 3em;
 }
 
+@media all and (min-width: 1000px) {
+    h2 {
+        font-size: 2.8em;
+    }
+}
+
 h3 {
-    font-size: 1.6em;
+    font-size: 2.2em;
 }
 
 p,
@@ -333,8 +345,6 @@ a {
 
 #sidebar li {
     margin: 0;
-    padding: 10px 0;
-    font-size: 1.1em;
 }
 
 #sidebar li ul {
@@ -345,16 +355,8 @@ a {
 #sidebar li li {
     line-height: 40px;
     border-bottom: 1px solid #e7ebed;
-    margin: 0 0;
     border-left: none;
-}
-
-#sidebar li li span {
-    display: block;
-    margin-top: -20px;
-    padding: 0;
-    font-size: 11px;
-    font-style: italic;
+    padding-left: 20px;
 }
 
 #sidebar li li a {
@@ -362,10 +364,10 @@ a {
     background: url("../img/img04.jpg") no-repeat left 50%;
 }
 
-#sidebar h2 {
-    padding: 0 0 30px 0;
+#sidebar h3 {
     letter-spacing: -0.5px;
     color: #222222;
+    padding-bottom: 15px;
 }
 
 #sidebar a {
