@@ -45,6 +45,12 @@ a {
     background: #ffffff url(".../img/img05.jpg") repeat;
 }
 
+#wrapper::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
 .container {
     width: 1000px;
     margin: auto;
@@ -234,6 +240,10 @@ a {
     color: #ffffff;
     text-align: center;
     text-decoration: none;
+}
+
+.single-word-style {
+    font-weight: bold;
 }
 
 /* Sidebar */
