@@ -93,10 +93,6 @@ a {
 
 /* Header */
 
-#header-wrapper {
-    overflow: hidden;
-}
-
 #header {
     width: 100%;
     margin: auto;
@@ -216,14 +212,17 @@ a {
 
 /* Banner */
 
+#banner {
+    margin: auto;
+}
+
 #banner img {
     width: 100%;
     height: auto;
 }
 
-#banner {
-    margin: 0 auto;
-    background: url("..img/img03.png") no-repeat left bottom;
+#banner img + img {
+    margin-top: -0.3em;
 }
 
 /* Page */
