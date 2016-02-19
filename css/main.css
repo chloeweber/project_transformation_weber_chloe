@@ -9,15 +9,15 @@ html {
 }
 
 .site-container {
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background: #050505 url(".../img/img01.jpg") repeat;
+    background: #050505 url("../img/img01.jpg") repeat;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #5b5b5b;
 }
 
@@ -56,18 +56,31 @@ a {
 }
 
 #wrapper {
-    background: #ffffff url(".../img/img05.jpg") repeat;
+    background: #ffffff url("../img/img05.jpg") repeat;
 }
 
-#wrapper::after {
-    content: "";
-    clear: both;
-    display: block;
+@media all and (min-width: 1000px) {
+    #wrapper::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
 }
 
 .container {
     width: 100%;
     margin: auto;
+}
+
+@media all and (min-width: 1000px) {
+    .container {
+        width: 1000px;
+    }
+    .container::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
 }
 
 /* Header */
@@ -90,7 +103,8 @@ a {
 #logo h1 {
     line-height: 120px;
     letter-spacing: -2px;
-    font-size: 10em;
+    font-size: 5em;
+    margin: auto;
     text-align: center;
     padding-top: 20px;
 }
@@ -105,6 +119,17 @@ a {
     background: none;
     text-decoration: none;
     color: #000000;
+}
+
+@media all and (min-width: 1000px) {
+    #logo {
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    #logo h1 {
+        font-size: 3.8em;
+    }
 }
 
 /* Menu */
@@ -122,13 +147,12 @@ a {
     line-height: normal;
 }
 
-#menu li {
-}
-
 #menu a {
     display: block;
-    line-height: 100px;
-    padding: 0 20px 0 20px;
+    line-height: 75px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    padding: 0 20px;
     text-decoration: none;
     text-align: center;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
@@ -142,21 +166,56 @@ a {
 
 #menu a:hover,
 #menu .current_page_item a {
-    background: url(".../img/img01.jpg") repeat;
+    background: url("../img/img01.jpg") repeat;
     text-decoration: none;
     color: #ffffff;
 }
 
-/* Banner */
-
-#banner {
-    margin: 0 auto;
-    background: url("../img/img03.png") no-repeat left bottom;
+@media all and (min-width: 600px) {
+    #menu li {
+        width: 50%;
+        display: inline-block;
+    }
 }
+
+@media all and (min-width: 850px) {
+    #menu li {
+        width: calc(100% / 3);
+    }
+}
+
+@media all and (min-width: 1000px) {
+    #menu {
+        float: right;
+        width: 500px;
+        margin: 0;
+    }
+
+    #menu ul {
+        float: right;
+    }
+
+    #menu li {
+        float: left;
+        width: auto;
+    }
+
+    #menu a {
+        line-height: 100px;
+        margin-bottom: 0;
+    }
+}
+
+/* Banner */
 
 #banner img {
     width: 100%;
     height: auto;
+}
+
+#banner {
+    margin: 0 auto;
+    background: url("..img/img03.png") no-repeat left bottom;
 }
 
 /* Page */
@@ -172,6 +231,14 @@ a {
 #content {
     padding: 25px;
     width: 100% - padding;
+}
+
+@media all and (min-width: 1000px) {
+    #content {
+        float: right;
+        width: 660px;
+        padding: 0;
+    }
 }
 
 .post {
@@ -250,6 +317,14 @@ a {
     margin: 0;
 }
 
+@media all and (min-width: 1000px) {
+    #sidebar {
+        float: left;
+        width: 270px;
+        padding: 30px 0 0 0;
+    }
+}
+
 #sidebar ul {
     margin: 0;
     padding: 0;
@@ -284,7 +359,7 @@ a {
 
 #sidebar li li a {
     padding: 0 0 0 20px;
-    background: url(".../img/img04.jpg") no-repeat left 50%;
+    background: url("../img/img04.jpg") no-repeat left 50%;
 }
 
 #sidebar h2 {
