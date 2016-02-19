@@ -4,7 +4,7 @@
 [Chloe Weber Responsive Transformation Assignment](https://github.com/chloeweber/project_transformation_weber_chloe)
 
 ##Web Host Link
-[Chloe Weber Responsive Transformation Assignment](hhttp://www.chloeweber.com/project_transformation_weber_chloe/)
+[Chloe Weber Responsive Transformation Assignment](http://www.chloeweber.com/project_transformation_weber_chloe/)
 
 ##Resources
 
