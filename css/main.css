@@ -52,7 +52,7 @@ a {
 }
 
 .container {
-    width: 1000px;
+    width: 100%;
     margin: auto;
 }
 
@@ -63,8 +63,7 @@ a {
 }
 
 #header {
-    width: 1000px;
-    height: 150px;
+    width: 100%;
     margin: auto;
 }
 
@@ -72,7 +71,6 @@ a {
 
 #logo {
     float: left;
-    width: 300px;
     color: #ffffff;
 }
 
@@ -105,12 +103,22 @@ a {
     color: #000000;
 }
 
+/* Banner */
+
+#banner {
+    margin: 0 auto;
+    background: url("../img/img03.png") no-repeat left bottom;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+}
+
 /* Menu */
 
 #menu {
     float: right;
-    width: 500px;
-    height: 90px;
     margin: 0 auto;
     padding: 0;
 }
@@ -150,19 +158,10 @@ a {
     color: #ffffff;
 }
 
-/* Banner */
-
-#banner {
-    margin: 0 auto;
-    width: 1000px;
-    height: 340px;
-    background: url("../img/img03.png") no-repeat left bottom;
-}
-
 /* Page */
 
 #page {
-    width: 1000px;
+    width: 100%;
     margin: 0 auto;
     padding: 30px 0;
 }
@@ -171,7 +170,7 @@ a {
 
 #content {
     float: right;
-    width: 660px;
+    width: 100%;
     padding: 0 0 0 0;
 }
 
@@ -222,7 +221,7 @@ a {
 .more {
     display: block;
     float: left;
-    width: 88px;
+    width: 100%;
     padding: 5px 5px;
     margin-right: 10px;
     background: #222222;
@@ -234,7 +233,7 @@ a {
 .comments {
     display: block;
     float: left;
-    width: 88px;
+    width: 100%;
     padding: 5px 5px;
     background: #222222;
     color: #ffffff;
@@ -250,7 +249,7 @@ a {
 
 #sidebar {
     float: left;
-    width: 270px;
+    width: 100%;
     margin: 0;
     padding: 30px 0 0 0;
 }
@@ -292,7 +291,6 @@ a {
 }
 
 #sidebar h2 {
-    height: 38px;
     padding: 0 0 30px 0;
     letter-spacing: -0.5px;
     font-size: 1.8em;
@@ -311,7 +309,6 @@ a {
 /* Footer */
 
 #footer {
-    height: 140px;
     margin: 0 auto;
     padding: 50px 0 15px 0;
     font-family: 'Abel', sans-serif;
